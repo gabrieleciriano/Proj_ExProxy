@@ -38,7 +38,7 @@ namespace Proj_Proxy
             //Criando uma variavel do tipo interface
             IPagamento proxy;
             //essa variavel recebe a instancia de um novo objeto da classe ProxyUsuario que se torna o objeto proxy
-            proxy = new ProxyUsuario();
+            proxy = new ProxyPagamento();
 
 
             for (int i = 1; i <= 3; i++)
@@ -78,7 +78,7 @@ namespace Proj_Proxy
         }
     }
     //Proxy
-    public class ProxyUsuario : IPagamento
+    public class ProxyPagamento : IPagamento
     {
         //ISubject
         //Normalmente ao criar um atributo do tipo da classe subject (Pagamento) é privado!
